@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="main_div">
@@ -13,9 +13,9 @@
             <h2 id="title">Chaleya</h2>
             <h3 id="artist">Arijit Singh</h3>
             <div class="img_container">
-                <img src="images/music-1.jpg" alt="">
+                <img src="music-1.jpg" alt="">
             </div>
-            <audio src="music/music-1.mp3"></audio>
+            <audio src="music-1.mp3"></audio>
 
             <!-- control -->
             <div class="music_controls">
@@ -83,8 +83,8 @@
     const loadSong=(songs) =>{
         title.textContent=songs.title;
         artist.textContent=songs.artist;
-        music.src= "music/"+songs.name+".mp3";
-        img.src="images/"+songs.name+".jpg";
+        music.src= songs.name+".mp3";
+        img.src=songs.name+".jpg";
     }
 
     songIndex=0;
